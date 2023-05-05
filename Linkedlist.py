@@ -8,12 +8,12 @@ class LinkedList:
     return
 
   def add_list_item(self, item):
-    item = Node(item)
+    node = Node(item)
     if self.head is None:
-      self.head = item
+      self.head = node
     else:
-      self.tail.next = item
-    self.tail = item
+      self.tail.next = node
+    self.tail = node
     return
     
   def list_length(self):
